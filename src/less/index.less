@@ -55,14 +55,62 @@
 }
 
 .main-picture {
-  width: 900px;
-  height: 900px;
+  width: 880px;
+  height: 880px;
 }
 
-.txt-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-color: #ffef3d;
-  border-style: solid;
-  border-radius: 50px;
+.landing-block {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/img/pink-back1.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-position-y: 20%;
 }
+
+.txt-picture {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-yellow {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: white;
+  border-style: solid;
+  border-color: #ffef3d;
+  border-width: 8px;
+  text-align: center;
+  width: 80%;
+
+  &__img {
+    margin-top: 20px;
+    width: 750px;
+
+  }
+
+}
+
+.block-pink {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: white;
+  border-style: solid;
+  border-color: #ff3d7f;
+  border-width: 8px;
+  text-align: center;
+  height: fit-content;
+  margin-top: 130px;
+  width: 50%;
+
+
+  &__txt {
+    margin-bottom: 20px;
+  }
+}
+
