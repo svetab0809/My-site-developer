@@ -120,9 +120,8 @@
   display: flex;
   flex-direction: column;
   background-image: url("/img/pink-triangle.png");
-  background-size: 100%;
+  background-size: 75%;
   background-repeat: no-repeat;
-  background-size: 80%;
   background-position-x: 85%;
   background-position-y: 20%;
 }
@@ -199,9 +198,108 @@
     margin: 0 auto;
     text-align: center;
     color: white;
-    margin-top: 50px;
+    margin-top: 100px;
     text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0, 0, 0, 0.5)
   }
 }
 
+.landing-niches {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  &__img {
+    width: 700px;
+    height: 780px;
+  }
+}
+
+.landing-niches-container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/img/niches-back.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: 100%;
+  background-position-y: 170%;
+  margin-bottom: 50px;
+}
+
+.landing-niches-info {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+margin-top: 100px;
+
+
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 45px;
+  }
+
+  &__pink {
+    color: #ff3d7f;
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+
+.niches-txt-container {
+  margin-left: -270px;
+}
+
+.niches-txt {
+
+  padding-top: 50px;
+  font-weight: bold;
+
+  &__title {
+    margin: 0;
+    color: #ff3d7f;
+    margin-bottom: 15px;
+
+    &_black {
+      color: black;
+    }
+  }
+
+  &__text {
+    color: white;
+    font-size: 35px;
+  }
+}
+
+.landing-niches-slogan {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-style: solid;
+  border-color: #ff3d7f;
+  border-width: 8px;
+
+  &__txt {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    border-style: solid;
+    border-color: #ffef3d;
+    border-width: 8px;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
 
