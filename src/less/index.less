@@ -172,7 +172,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
-  background-image: url("/img/banner-back.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='342' viewBox='0 0 1920 342' fill='none'%3E%3Crect width='1920' height='341.659' fill='%23FD82AC' fill-opacity='0.44'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position-y: 80%;
   margin-bottom: 30px;
@@ -194,8 +194,14 @@
     margin: 0 auto;
     text-align: center;
     color: white;
+    text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 100px;
-    text-shadow: 1px 1px 0 #000, 2px 2px 5px rgba(0, 0, 0, 0.5)
+
+    &_form {
+      margin-top: 20px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 }
 
@@ -517,4 +523,92 @@ width: 90%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  border: 8px solid;
+  border-color: #ff3d7f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 70%;
+  font-weight: bold;
+  color: black;
+  max-height: fit-content;
+
+  &__title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+
+  &__input {
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: #ff3d7f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Bona Nova';
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__message {
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: #ff3d7f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Bona Nova';
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+  }
+}
+
+.form-collage {
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='561' height='897' viewBox='0 0 561 897' fill='none'%3E%3Crect y='243' width='561' height='654' fill='%23F9F3AC' fill-opacity='0.94'/%3E%3Crect x='100' width='458' height='505' fill='%23F5BCCF'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position-x: 70%;
+
+
+  &__img {
+    width: 650px;
+  }
+
+  &__txt {
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    left: 295px;
+    top: 35px;
+    width: 45%;
+  }
 }
