@@ -459,8 +459,23 @@
 </div>
         <span class="btn btn_stages" data-show-modal >ОБСУДИТЬ ПРОЕКТ</span>
     </div>
-
 </main>
+
+<div class="modal" data-modal>
+    <form class="form form_modal">
+        <svg class="cross" data-close-modal viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00915849 50.9605C-0.520948 23.3514 21.4309 0.539991 49.0401 0.00988448C76.6493 -0.520223 99.4606 21.4317 99.9907 49.0408C100.521 76.65 78.569 99.4613 50.9598 99.9915C23.3506 100.522 0.539266 78.5697 0.00915849 50.9605ZM39.6109 35.0452C38.1894 33.6772 35.9288 33.7206 34.5608 35.1422C33.1932 36.5633 33.2366 38.8243 34.6577 40.192L44.9516 50.0976L35.0456 60.3911C33.678 61.8126 33.7214 64.0733 35.1425 65.4412C36.5641 66.8088 38.8247 66.7654 40.1927 65.3443L50.0983 55.0504L60.3918 64.9564C61.813 66.324 64.074 66.2806 65.4416 64.8595C66.8092 63.438 66.7658 61.1773 65.3446 59.8093L55.0512 49.9037L64.9568 39.6102C66.3248 38.189 66.2814 35.928 64.8598 34.5604C63.4387 33.1924 61.1777 33.2359 59.8101 34.6574L49.9044 44.9509L39.6109 35.0452Z" fill="#FF3D7F" fill-opacity="0.94"/>
+        </svg>
+        <h3>ЗАПОЛНИТЕ ФОРМУ</h3>
+        <span class="form__subtitle">И мы свяжемся с вами в ближайшее время.</span>
+        <input type="text" required class="form__input form__input_modal" name="name" placeholder="Ваше имя*">
+        <input type="tel" required class="form__input form__input_modal" name="phone"
+               placeholder="+7 (000) 000-00-00*">
+        <input type="email" class="form__input form__input_modal" name="email" placeholder="Ваш e-mail*">
+        <textarea class="form__input form__input_modal form__input_message" name="message" placeholder="Сообщение"></textarea>
+        <input type="submit" class="btn btn_form btn_modal" value="ОСТАВИТЬ ЗАЯВКУ">
+    </form>
+</div>
 //= ./blocks/footer.html
 
 //= ./blocks/scripts.html
