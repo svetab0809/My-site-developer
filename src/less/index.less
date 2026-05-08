@@ -450,14 +450,25 @@ margin-right: 20px;
 
 //Reviews
 
+
 .reviews {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
 
   &__nav {
     width: 70px;
     cursor: pointer;
+    position: relative;
+    top: 650px;
+    left: 1%;
+
+    &-next {
+      top: -565px;
+      left: 95%;
+    }
 
   }
 
@@ -466,10 +477,9 @@ margin-right: 20px;
   }
 }
 
-.reviews-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.swiper-slide {
+  width: 90% !important;
 }
 
 .review {
@@ -482,7 +492,8 @@ margin-right: 20px;
   padding-left: 35px;
   border: #ff3d7f solid 8px;
   border-radius: 50px;
-  width: 80%;
+  margin-right: 30px;
+  margin-left: 33px;
 
   &__person {
     display: flex;
@@ -508,6 +519,10 @@ margin-right: 20px;
     border-radius: 50px;
     text-align: center;
   }
+}
+
+.btn_reviews {
+  width: 30%;
 }
 
 //FAQ
