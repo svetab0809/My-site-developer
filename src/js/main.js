@@ -39,14 +39,19 @@ const reviewsSlider = new Swiper ( ".reviews", {
     slidesPerView: 1,
 spaceBetween:90,
 
-    breakpoints: {
-
-        // 1440: {spaceBetween: 120},
-        // 768: {spaceBetween: 100},
-        // 540: {spaceBetween: 50},
-    },
-
-    // autoplay: {
-    //     delay: 3000,
+    // breakpoints: {
+    //     1440: {spaceBetween: 120},
+    //     768: {spaceBetween: 100},
+    //     540: {spaceBetween: 50},
     // },
+
+    autoplay: {
+    delay: 3000,
+    },
 });
+
+//FAQ
+
+const questions = document.querySelectorAll(".question")
+
+
