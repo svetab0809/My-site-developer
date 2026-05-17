@@ -36,14 +36,17 @@ const reviewsSlider = new Swiper ( ".reviews", {
     touchAngle:45,
     grabCursor:true,
     loop: true,
-    slidesPerView: 1,
-spaceBetween:90,
+    spaceBetween: 0,
 
-    // breakpoints: {
-    //     1440: {spaceBetween: 120},
-    //     768: {spaceBetween: 100},
-    //     540: {spaceBetween: 50},
-    // },
+    breakpoints: {
+
+        1440: {spaceBetween: 40},
+        768: {spaceBetween: 100},
+        430: {spaceBetween: 50},
+        375: {spaceBetween: 10},
+        360: {spaceBetween: 15},
+        344: {spaceBetween: 20},
+    },
 
     autoplay: {
     delay: 3000,
