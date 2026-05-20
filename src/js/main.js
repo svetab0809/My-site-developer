@@ -57,4 +57,24 @@ const reviewsSlider = new Swiper ( ".reviews", {
 
 const questions = document.querySelectorAll(".question")
 
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.querySelector('.question__answer')
+        const answerCssClasses = answer.classList
+        const cross = question.querySelector('.question__cross')
 
+        let answerHeight = `${answer.scrollHeight}px`
+        let crossDegree = 45
+
+        if(answerCssClasses.contains('question_active')) {
+            answerCssClasses.remove('question_active')
+            answerHeight = 0
+            crossDegree = 0
+        } else {
+            answerCssClasses.add('question_active')
+        }
+        cross.style.transform = `rotate(${crossDegree}deg)`
+        answer.style.height = answerHeight
+    });
+
+})
