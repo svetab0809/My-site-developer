@@ -78,3 +78,18 @@ questions.forEach(question => {
     });
 
 })
+
+//Burger-menu
+
+const burgerMenu = document.querySelector('.bar')
+const mobileMenu = document.querySelector('.menu-mobile')
+const menuExit = document.querySelector('.menu-mobile__cross')
+
+burgerMenu.addEventListener ('click', () => {
+    mobileMenu.style.height = '100%'
+
+});
+
+menuExit.addEventListener('click', () => {
+    mobileMenu.style.height = '0%'
+});
