@@ -96,3 +96,6 @@ burgerMenu.addEventListener ('click', () => {
 menuExit.addEventListener('click', () => {
     mobileMenu.style.height = '0%'
 });
+
+//Отправка формы на сервер
+
