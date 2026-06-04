@@ -12,6 +12,7 @@ for (let button of btnOpenModal) {
     button.addEventListener('click', () => {
         modalToggle(modalWindow, 'block');
     });
+    ym(109590713,'reachGoal','clickToButton')
 }
 
 const crossCloseModal = document.querySelectorAll('[data-close-modal]')
@@ -99,3 +100,44 @@ menuExit.addEventListener('click', () => {
 
 //Отправка формы на сервер
 
+const forms = document.querySelectorAll('form')
+const loader = document.querySelector('.loader-wrap')
+const modalWindowForm = document.querySelector('.modal')
+
+for (let form of forms) {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        loader.style.display = 'block'
+
+        if (modalWindowForm.style.display === 'block') {
+            modalWindowForm.style.display = 'none'
+        }
+
+        ym(109590713,'reachGoal','sendForm')
+
+        fetch('/php/mail.php', {
+    method: 'POST',
+    body: formData,
+})
+    .then((response) => response.json())
+    .then((data) => {
+        if(data === 'ok') {
+            const successModal = document.querySelector(".modal-send")
+            loader.style.display = 'none'
+            successModal.style.display = 'block'
+        }
+        else {
+            const errorModal = document.querySelector(".modal-send_error")
+            loader.style.display = 'none'
+            errorModal.style.display = 'block'
+        }
+    })
+    .catch((error) => {
+        console.log('Произошла ошибка!')
+        console.error(error)
+    })
+});
+}
